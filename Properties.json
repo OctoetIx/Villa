@@ -1,0 +1,184 @@
+{
+    "properties": [
+      {
+        "name": "Apartment",
+        "location": "Miami",
+        "area" : "",
+        "price" : "250",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Bungalow",
+        "location": "Texas",
+        "area" : "",
+        "price" : "300",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/6430734/pexels-photo-6430734.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Penthouse",
+        "location": "Toronto",
+        "area" : "",
+        "price" : "400",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/8572163/pexels-photo-8572163.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Apartment",
+        "location": "Miami",
+        "area" : "",
+        "price" : "",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Penthouse",
+        "location": "Miami",
+        "area" : "",
+        "price" : "",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/7746937/pexels-photo-7746937.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Apartment",
+        "location": "ohio",
+        "area" : "",
+        "price" : "",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/275484/pexels-photo-275484.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Penthouse",
+        "location": "Toronto",
+        "area" : "",
+        "price" : "",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/3741315/pexels-photo-3741315.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Bungalow",
+        "location": "Texas",
+        "area" : "",
+        "price" : "",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/311066/pexels-photo-311066.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Penthouse",
+        "location": "Toronto",
+        "area" : "",
+        "price" : "",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/7614604/pexels-photo-7614604.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Apartment",
+        "location": "Miami",
+        "area" : "",
+        "price" : "",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Penthouse",
+        "location": "Toronto",
+        "area" : "",
+        "price" : "",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/10258623/pexels-photo-10258623.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Bungalow",
+        "location": "Texas",
+        "area" : "",
+        "price" : "",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/434549/pexels-photo-434549.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Penthouse",
+        "location": "Toronto",
+        "area" : "",
+        "price" : "",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/28272343/pexels-photo-28272343/free-photo-of-a-living-room-with-a-ceiling-fan-and-white-furniture.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Bungalow",
+        "location": "Toronto",
+        "area" : "",
+        "price" : "",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Apartment",
+        "location": "Miami",
+        "area" : "",
+        "price" : "",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/1428348/pexels-photo-1428348.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Bungalow",
+        "location": "Texas",
+        "area" : "",
+        "price" : "",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/1101296/pexels-photo-1101296.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Penthouse",
+        "location": "Toronto",
+        "area" : "",
+        "price" : "",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/6970051/pexels-photo-6970051.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Bungalow",
+        "location": "Texas",
+        "area" : "",
+        "price" : "",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/436381/pexels-photo-436381.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Apartment",
+        "location": "Miami",
+        "area" : "",
+        "price" : "",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/813692/pexels-photo-813692.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Bungalow",
+        "location": "Texas",
+        "area" : "",
+        "price" : "",
+        "parking_spot" : "",
+        "address" : "",
+        "image": "https://images.pexels.com/photos/2999005/pexels-photo-2999005.jpeg?auto=compress&cs=tinysrgb&w=600"
+      }
+    ]
+   }

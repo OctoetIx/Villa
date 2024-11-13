@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Villa Realty</title>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "V3UhN_M23ZusVsacI",
+      });
+   })();
+</script>
+<script src="script.js"></script>
+
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-warning navbar-light sticky-top">
+      <div class="container">
+        <h1><a href="#" class="navbar-brand">VILLA</a></h1>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link fw-bold">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="properties.html" class="nav-link fw-bold">Properties</a>
+            </li>
+            <li class="nav-item">
+              <a href="#AboutUs" class="nav-link fw-bold">About us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Agents" class="nav-link fw-bold">Agents</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Services" class="nav-link fw-bold">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#FAQs" class="nav-link fw-bold">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link fw-bold">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO-SECTION -->
+    <section id="home">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner" data-bs-target="#carouselExampleCaptions" data-bs-interval="1000">
+          <div class="carousel-item active c-item">
+            <img
+              src="images/banner-01.jpg"
+              class="d-block w-100 c-img"
+              alt="..."
+            />
+            <div class="carousel-caption top-0 mt-5 d-md-block">
+              <h5 class="text-warning mt-5">Toronto, Canada</h5>
+              <h1 class="text-capitalize">HURRY!</h1>
+              <h1 class="text-capitalize">GET THE BEST VILLA FOR YOU</h1>
+              <button
+                class="btn btn-warning mt-5 px-3 py-2 text-capitalize fw-bold" data-bs-toggle="modal" data-bs-target="#enroll"
+              >
+                schedule a visit
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item c-item" data-bs-interval="2000">
+            <img
+              src="images/banner-02.jpg"
+              class="d-block w-100 c-img"
+              alt="..."
+            />
+            <div class="carousel-caption top-0 mt-5 d-md-block">
+              <h5 class="text-warning mt-5">Melbourne, Australia</h5>
+              <h1 class="text-capitalize">BE QUICK!</h1>
+              <h1 class="text-capitalize">GET THE BEST VILLA IN TOWN</h1>
+              <button
+                class="btn btn-warning mt-5 px-3 py-2 text-capitalize fw-bold" data-bs-toggle="modal" data-bs-target="#enroll"
+              >
+                schedule a visit
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item c-item" data-bs-interval="2000">
+            <img
+              src="images/banner-03.jpg"
+              class="d-block w-100 c-img"
+              alt="..."
+            />
+            <div class="carousel-caption top-0 mt-5 d-md-block">
+              <h5 class="text-warning mt-5">Miami, South Florida</h5>
+              <h1 class="text-capitalize">ACT NOW!</h1>
+              <h1 class="text-capitalize">GET THE HIGHEST PENTHOUSE IN TOWN</h1>
+              <button
+                class="btn btn-warning mt-5 px-3 py-2 text-capitalize fw-bold" data-bs-toggle="modal" data-bs-target="#enroll"
+              >
+                schedule a visit
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="AboutUs" class="bg-dark text-warning">
+      <div class="container d-lg-flex ms-auto">
+        <img
+          src="images/featured.jpg"
+          alt=""
+          class="image-fluid ms-md-5 mb-md-5 mt-5"
+        />
+        <div class="container ms-2 mt-5 text-center">
+          <h2>About Us</h2>
+          <p>
+            <strong>Villa Realty:</strong> Building Dreams, One Property at a
+            Time. <br />
+            Founded on a commitment to excellence and integrity,
+            <strong>Villa Realty</strong> is a leading real estate firm
+            dedicated to helping clients navigate the complexities of property
+            transactions with confidence and ease. With a team of highly skilled
+            agents, a deep understanding of market trends, and a personalized
+            approach to client service, <strong>Villa Realty</strong> is more
+            than just a real estate company – it’s a trusted partner in
+            achieving dreams and building legacies.
+          </p>
+          <h2>Our Mission</h2>
+          <p class="lead">
+            At <strong>Villa Realty</strong> our mission is simple yet powerful:
+            to make the buying, selling, and investing experience seamless,
+            rewarding, and stress-free. We believe that a home is more than just
+            a property; it's a place where memories are made and futures are
+            built. We are committed to guiding clients toward properties that
+            fit their unique needs and aspirations
+          </p>
+          <a href="https://wa.me/qr/HYEUZQ7YWJGDN1"><button class="btn btn-warning mt-5 my-3 px-3 py-2 text-capitalize">
+            contact us
+          </button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTINGS SECTION-1 -->
+    <section>
+      <div class="container">
+        <h2 class="fs-5 fw-bold text-center my-5">Featured Listings</h2>
+      </div>
+      <div class="container">
+        <div class="row g-3 g-md-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <img
+                src="images/property-01.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex">
+                  <p class="card-title fs-6 fw-bold bg-dark text-warning p-1">
+                    Penthouse
+                  </p>
+                  <h5 class="fs-5 fw-bold ms-3">$ 2.264.00</h5>
+                </div>
+                <p class="card-text fw-bold">18, New Street, Miami, OR 97219</p>
+                <p class="card-text fw-bold mt-0">
+                  Area: 545m<sup>2</sup> <br />Floor: 3 <br />Parking Spot: 6
+                </p>
+                <button type="submit" class="btn btn-dark text-warning fw-bold" data-bs-toggle="modal" data-bs-target="#enroll"
+                  >Schedule A visit</button
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img
+                src="images/property-02.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex">
+                  <p class="card-title fs-6 fw-bold bg-dark text-warning p-1">
+                    Luxury Villa
+                  </p>
+                  <h5 class="fs-5 fw-bold ms-3">$1.180.00</h5>
+                </div>
+                <p class="card-text fw-bold">54 Mid Street Florida, OR 27001</p>
+                <p class="card-text fw-bold mt-0">
+                  Area: 436m<sup>2</sup> <br />Floor: 3 <br />Parking Spot: 6
+                </p>
+                <a href="#" class="btn btn-dark text-warning fw-bold" data-bs-toggle="modal" data-bs-target="#enroll"
+                  >Schedule A visit</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img
+                src="images/property-03.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex">
+                  <p class="card-title fs-6 fw-bold bg-dark text-warning p-1">
+                    Apartment
+                  </p>
+                  <h5 class="fs-5 fw-bold ms-3">$1.460.00</h5>
+                </div>
+                <p class="card-text fw-bold">
+                  26 Old Street Miami,Florida, OR 38540
+                </p>
+                <p class="card-text fw-bold mt-0">
+                  Area: 580m<sup>2</sup> <br />Floor: 3 <br />Parking Spot: 6
+                </p>
+                <a href="#" class="btn btn-dark text-warning fw-bold" data-bs-toggle="modal" data-bs-target="#enroll"
+                  >Schedule A visit</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img
+                src="images/property-04.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex">
+                  <p
+                    class="card-title fs-6 fw-bold bg-dark text-warning p-1 text-center"
+                  >
+                    Penthouse
+                  </p>
+                  <h5 class="fs-5 fw-bold ms-3">$925.60</h5>
+                </div>
+                <p class="card-text fw-bold">34 Beach Street Miami, OR 42680</p>
+                <p class="card-text fw-bold mt-0">
+                  Area: 467m<sup>2</sup> <br />Floor: 3 <br />Parking Spot: 6
+                </p>
+                <a href="#" class="btn btn-dark text-warning fw-bold" data-bs-toggle="modal" data-bs-target="#enroll"
+                  >Schedule A visit</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENTS SECTION -->
+    <section id="Agents" class="p-5 bg-dark">
+      <div class="container">
+        <h2 class="text-warning text-center">Our Agents</h2>
+        <p class="lead text-warning text-center">
+          Our agents all have 5+ years working as a realtor in the industry
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-warning"  data-aos="flip-left">
+              <div class="card-body text-center">
+                <img
+                  src="images/portrait-1.jpeg"
+                  alt=""
+                  class="rounded-circle mb-3 img-fluid w-50 h-25"
+                />
+                <h3 class="card-title mb-3">Adams Smith</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid quibusdam sit perferendis libero ducimus praesentium.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-warning">
+              <div class="card-body text-center">
+                <img
+                  src="images/potrait-4.jpeg"
+                  alt=""
+                  class="rounded-circle mb-3 img-fluid w-50 h-25"
+                />
+                <h3 class="card-title mb-3">Jane Taylor</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid quibusdam sit perferendis libero ducimus praesentium.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-warning">
+              <div class="card-body text-center">
+                <img
+                  src="images/portrait-2.jpeg"
+                  alt=""
+                  class="rounded-circle mb-3 img-fluid w-50 h-25"
+                />
+                <h3 class="card-title mb-3">Robert White</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid quibusdam sit perferendis libero ducimus praesentium.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-warning">
+              <div class="card-body text-center">
+                <img
+                  src="images/portrait-4.jpeg"
+                  alt=""
+                  class="rounded-circle mb-3 img-fluid w-50 h-25"
+                />
+                <h3 class="card-title mb-3">Victoria Cook</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid quibusdam sit perferendis libero ducimus praesentium.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+
+    <section class="bg-light text-dark">
+      <div id="Services" class="text-center">
+        <h3 class="mt-4 fw-bold">Our Services</h3>
+        <p class="lead text-center mt-4">
+          <strong>Villa Realty</strong> offers a comprehensive range of services
+          tailored to meet the diverse needs of our clients:
+        </p>
+      </div>
+      <div class="container my-5">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Residential Sales and Leasing:
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>Residential Sales and Leasing:</strong> Assisting
+                clients in finding the perfect home or investment property, from
+                single-family homes to luxury condominiums and more.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Commercial Real Estate:
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>Commercial Real Estate:</strong>Helping businesses find
+                the ideal location and space to support growth and success, from
+                office buildings to retail spaces.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Property Management:
+              </button>
+            </h2>
+            <div
+              id="collapse2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>Property Management:</strong> Professional property
+                management services designed to protect and enhance the value of
+                investments.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Real Estate Investment Guidance:
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>Real Estate Investment Guidance:</strong>Strategic
+                advice for investors seeking to diversify their portfolio or
+                find high-yield opportunities in the real estate market.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTINGS SECTION-2 -->
+
+    <section>
+      <div class="container">
+        <h2 class="fs-5 fw-bold text-center my-5">Featured Listings</h2>
+      </div>
+      <div class="container">
+        <div class="row g-3 g-md-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <img
+                src="images/property-02.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex">
+                  <p class="card-title fs-6 fw-bold bg-dark text-warning p-1">
+                    Penthouse
+                  </p>
+                  <h5 class="fs-5 fw-bold ms-3">$ 2.264.00</h5>
+                </div>
+                <p class="card-text fw-bold">18, New Street, Miami, OR 97219</p>
+                <p class="card-text fw-bold mt-0">
+                  Area: 545m<sup>2</sup> <br />Floor: 3 <br />Parking Spot: 6
+                </p>
+                <a href="#" class="btn btn-dark text-warning fw-bold" data-bs-toggle="modal" data-bs-target="#enroll"
+                  >Schedule A visit</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img
+                src="images/property-04.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex">
+                  <p class="card-title fs-6 fw-bold bg-dark text-warning p-1">
+                    Luxury Villa
+                  </p>
+                  <h5 class="fs-5 fw-bold ms-3">$1.180.00</h5>
+                </div>
+                <p class="card-text fw-bold">54 Mid Street Florida, OR 27001</p>
+                <p class="card-text fw-bold mt-0">
+                  Area: 436m<sup>2</sup> <br />Floor: 3 <br />Parking Spot: 6
+                </p>
+                <a href="#" class="btn btn-dark text-warning fw-bold" data-bs-toggle="modal" data-bs-target="#enroll"
+                  >Schedule A visit</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img
+                src="images/property-06.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex">
+                  <p class="card-title fs-6 fw-bold bg-dark text-warning p-1">
+                    Apartment
+                  </p>
+                  <h5 class="fs-5 fw-bold ms-3">$1.460.00</h5>
+                </div>
+                <p class="card-text fw-bold">
+                  26 Old Street Miami,Florida, OR 38540
+                </p>
+                <p class="card-text fw-bold mt-0">
+                  Area: 580m<sup>2</sup> <br />Floor: 3 <br />Parking Spot: 6
+                </p>
+                <a href="#" class="btn btn-dark text-warning fw-bold" data-bs-toggle="modal" data-bs-target="#enroll"
+                  >Schedule A visit</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img
+                src="images/property-05.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex">
+                  <p
+                    class="card-title fs-6 fw-bold bg-dark text-warning p-1 text-center"
+                  >
+                    Apartment
+                  </p>
+                  <h5 class="fs-5 fw-bold ms-3">$1.125.60</h5>
+                </div>
+                <p class="card-text fw-bold">52 Beach Street Miami, OR 42680</p>
+                <p class="card-text fw-bold mt-0">
+                  Area: 467m<sup>2</sup> <br />Floor: 3 <br />Parking Spot: 4
+                </p>
+                <a href="#" class="btn btn-dark text-warning fw-bold" data-bs-toggle="modal" data-bs-target="#enroll"
+                  >Schedule A visit</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs SECTION -->
+    <section class="bg-light text-dark">
+      <div id="FAQs" class="text-center">
+        <h3 class="mt-4 fw-bold">Frequently Asked Questions</h3>
+        <p class="lead text-center mt-4">Some Frequently Asked Questions</p>
+      </div>
+      <div class="container my-5">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                What’s the first step in buying a home?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                The first step is to get pre-approved for a mortgage. This helps
+                you understand your budget and shows sellers that you’re a
+                serious buyer. We can help connect you with reputable mortgage
+                lenders.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Do you offer property management services?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Yes, we provide comprehensive property management services for
+                landlords, including tenant screening, rent collection, and
+                maintenance management. Contact us to learn more about how we
+                can help manage your rental property.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                What’s the difference between residential and commercial real
+                estate investing?
+              </button>
+            </h2>
+            <div
+              id="collapse2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Residential real estate typically involves single-family homes
+                or multi-family units rented out for income, while commercial
+                real estate includes retail, office, or industrial properties.
+                Each has unique benefits and considerations.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                How can I contact my agent?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                You can reach your agent via phone, email, or our website’s
+                contact form. We are committed to providing timely responses to
+                all client inquiries.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT US -->
+    <section id="Agents" class="p-5 bg-dark">
+      <div class="container">
+        <h2 class="text-warning text-center mb-4">Our Socials</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-warning text-center fs-1">
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <p class="lead fw-bold">@VillaRealty</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-warning text-center fs-1">
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <p class="lead fw-bold">@VillaRealty</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-warning text-center fs-1">
+              <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              <p class="lead fw-bold">@VillaRealty</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-warning text-center fs-1">
+              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+              <p class="lead fw-bold">@VillaRealty</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-3 bg-dark text-warning text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2024, Villa Realty</p>
+
+            <a href="" class="position-absolute bottom-0 end-0 mb-3">
+                <i class="bi bi-arrow-up-circle h1 text-warning"></i>
+            </a>
+        </div>
+    </footer>
+
+
+    <!-- Modal -->
+<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enroll" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <h1 class="modal-title fs-5" id="enroll">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body">
+          <p class="lead">Fill out this form and we will get back to you</p>
+
+          <form action="">
+            <!-- <div class="mb-3">
+                <label for="name" class="col-form-label">Name:</label>
+                <input type="text" class="form-control" id="name">
+                <span id="name_error"></span>
+            </div> -->
+            <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <!-- <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="number" class="form-control" id="phone">
+            </div> -->
+            <div class="mb-3">
+                <label for="message" class="col-form-label">Message:</label>
+                <input type="text" class="form-control" id="message">
+                <span id="msg_error"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-warning" onclick="sendMail()">Submit</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
