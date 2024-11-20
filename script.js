@@ -59,8 +59,12 @@ function displayItems() {
             <p>Location: ${property.location}</p>
             <p>Area: ${property.area}</p>
             <p>Parking Spot: ${property.parking_spot}</p>
-            <button>Schedule A Visit</button>
+            <button class="btn">Schedule A Visit</button>
         `;
+        propertyCard.addEventListener("click", (e) => {
+            const saveBtn = e.target.closest(".btn")
+            saveBtn.style.color = ""    
+        })
         propertyContainer.appendChild(propertyCard);
     });
 }
@@ -139,11 +143,14 @@ const searchProperties = (query) => {
         property.location.toLowerCase().includes(query.toLowerCase())
     );
     displayProperties(searchedProperties);
+
+    const searchInput = document.getElementById('searchInput').value
+searchInput.addEventListener("input", (event) => {
+    searchProperties(event.target.value)
+});
 };
 
-document.getElementById('searchInput').addEventListener('input', (event) => {
-    searchProperties(event.target.value);
-});
+
 
 // Initialize data and event listeners
 window.onload = fetchProperties;

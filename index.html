@@ -26,7 +26,6 @@
       });
    })();
 </script>
-<script src="script.js"></script>
 
   </head>
   <body>
@@ -45,7 +44,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto" id="navLinks">
             <li class="nav-item">
               <a href="#home" class="nav-link fw-bold">Home</a>
             </li>
@@ -64,9 +63,13 @@
             <li class="nav-item">
               <a href="#FAQs" class="nav-link fw-bold">FAQs</a>
             </li>
-            <li class="nav-item">
-              <a href="login.html" class="nav-link fw-bold">Login</a>
+            <li class="nav-item" id="loginLinkContainer">
+              <a href="login.html" class="nav-link fw-bold" id="loginLink">Login</a>
             </li>
+            <li class="nav-item" id="logoutLinkContainer" style="display: none;">
+              <a href="#" class="nav-link fw-bold" id="logoutLink">Logout</a>
+            </li>
+            
           </ul>
         </div>
       </div>
@@ -846,5 +849,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>

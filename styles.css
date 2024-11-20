@@ -64,6 +64,11 @@
     color: #e4a11b;
     border-radius: 10px;
 }
+.c-property button:hover{
+    background-color: #e4a11b;
+    color: black;
+    border-radius: 10px;
+}
 .c-property h2{
     background-color: black;
     color: #e4a11b;
