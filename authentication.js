@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isLoggedIn) {
             loginLinkContainer.style.display = 'none';
             logoutLinkContainer.style.display = 'block';
-            loginLink.textContent = 'Logout'
+            // loginLink.textContent = 'Logout'
         } else {
             loginLinkContainer.style.display = 'block';
             logoutLinkContainer.style.display = 'none';
